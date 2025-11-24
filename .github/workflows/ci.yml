@@ -76,7 +76,7 @@ jobs:
       run: |
         docker build -f docker/Dockerfile -t stock-dashboard:test .
     
-    - name: Test Docker container
+    - name: Test Docker container1
       run: |
         docker run -d --name test-container -p 8080:8080 -e ALPHA_VANTAGE_API_KEY=demo stock-dashboard:test
         sleep 10
